@@ -75,6 +75,10 @@ p{
 	padding: 1.25rem 0;
 }
 
+#header.colored{
+	background-color: #31344e;
+}
+
 
 /*навигация*/
 .nav{
@@ -227,7 +231,6 @@ p{
 
 .bio-flex{
 	display: flex;
-	align-items: center;
 	flex-wrap: wrap;
 	justify-content: space-between;	
 
@@ -306,6 +309,7 @@ p{
 
 .bio-text{
 	flex-basis: 68%;
+	margin-top: 50px;
 }
 
 .bio-text-p{
@@ -573,7 +577,8 @@ p{
 }
 
 .map{
-	flex-basis: 50%;
+	flex-basis: 65%;
+	margin-bottom: -3px;
 }
 
 .map iframe{
@@ -581,7 +586,7 @@ p{
 }
 
 .info{
-	flex-basis: 50%;
+	flex-basis: 35%;
 }
 
 
@@ -661,20 +666,22 @@ p{
 
 	/*галерея работ*/
 	.works-item{
-		flex-basis: 33.333333333333333333333333333333333333333333333%;
+		flex-basis: 50%;
 	}
 }
 
 @media  (max-width: 1100px) {
 	/* размер текстов */
 	html{
-		font-size: 14px;
+		font-size: 15px;
 	}
 	
 	.bio-text {
 	    flex-basis: 100%;
 	    margin: 0 auto;
 	    margin-top: 30px;
+
+	    padding: 0 30px;
 	}
 	.bio-man{
 		flex-basis: 100%;
@@ -714,7 +721,7 @@ p{
 	}
 
 	.nav a{
-		margin: 7px 0;
+		margin: 12px 0;
 	}
 
 	/*отображаю бургер*/
@@ -735,12 +742,18 @@ p{
 @media  (max-width: 700px) {
 	/* размер текстов */
 	html{
-		font-size: 11px;
+		font-size: 13px;
 	}
+
 
 	/* padding  в секции "обо мне" */
 	.page-bio {
     	padding: 40px 0 40px;
+	}
+
+	.bio-text {
+
+	    padding: 0;
 	}
 
 	/*секция с достижениями*/
@@ -808,7 +821,7 @@ p{
 @media  (max-width: 470px) {
 	/* размер текстов */
 	html{
-		font-size: 9px;
+		font-size: 10px;
 	}
 
 
@@ -842,76 +855,3 @@ p{
 	}
 	
 }	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
