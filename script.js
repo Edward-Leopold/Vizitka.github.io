@@ -8,7 +8,7 @@ $(function() {
 
 	checkScroll(scrollPos, introH);
 
-		$(window).on("scroll resize", function() {
+	$(window).on("scroll resize", function() {
 		let introH = intro.innerHeight();
 		scrollPos = $(this).scrollTop();
 
@@ -44,9 +44,16 @@ $(function() {
 		event.preventDefault();
 
 		nav.toggleClass("show");
+		$("#header").toggleClass("colored");
 	});
 
 
+	// scrollbar
+	$(".reviews").niceScroll({
+		cursorcolor: "#e84545",
+		cursoropacitymin: 1,
+		cursorwidth: "6px"
+	});
 
 
 });
